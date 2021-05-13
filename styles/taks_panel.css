@@ -1,0 +1,176 @@
+#tasks{
+    width: 30%;
+    border-right: 1px solid whitesmoke;
+    overflow-y: auto;
+    
+}
+    #edit-create{
+        width: 100%;
+        margin: 0 auto;
+        height: 92vh;
+
+        display: flex;
+        align-items: center;
+    }
+        #card{
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem .5rem 4rem .5rem;
+
+            background-color: whitesmoke;
+            background-image: linear-gradient(whitesmoke, white);
+            border: 1px solid rgb(186, 186, 186);
+            border-bottom: 0;
+            border-radius: 3px 3px 0 0;
+
+            position: relative;
+            box-sizing: border-box;
+        }
+            #card *{
+                font-family: 'Poppins', sans-serif;
+            }
+        #edit_create_p{
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            text-align: center;
+            text-decoration: rgb(126, 0, 0) underline;
+        }
+        #tasks_creator{
+            padding: 0 1vh 1vh 1vh;
+            display: flex;
+            
+            
+        }
+            #task_creator_inputs{
+                width: 80%;
+            }
+                #tasks_creator input, #tasks_creator textarea, #tasks_creator select{
+                    margin: 0 auto;
+                    border-radius: 0;
+                    border: 0;
+                    border-bottom: 1px solid rgb(192, 190, 190);
+                    
+                    background-color: whitesmoke;
+                    color: rgb(68, 68, 68);
+
+                    margin-top: .5rem;
+                    box-sizing: border-box;
+                }
+                
+                #day_input, #month_input, #year_input{
+                    width: 33%;
+                }
+                #subject_input, #name_input{
+                    width: 100%;
+                }
+                #resol_input{
+                    width: 68%;
+                    margin-right: 2%;
+                }
+                #percentaje_input{
+                    width: 30%;;
+                }
+                
+                #tasks_creator textarea{
+                    width: 100%;
+                    resize: vertical;
+                    min-height: 20vh;
+                    max-height: 50vh;
+                    
+                }
+                #date_inputs{
+                    display: flex;
+                }
+                #r_inputs{
+                    display: flex;
+                }
+            #button_task_creator{
+                width: 20%;
+                
+                margin-left: 1vh;
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+
+                color: rgb(248, 239, 244);
+                border-radius: 10px;
+                background: #25271E;
+                box-shadow: inset 5px 5px 10px #0f100c, 
+                inset -5px -5px 10px #3b3e30;
+            }
+            #button_task_creator:hover{
+                background: rgb(13, 14, 12);
+            }
+                #button_task_creator p{
+                    width: 100%;
+                    margin: 0;
+                }
+        #delete_task{
+            width: 80%;
+            padding: 0.5rem 0;
+            margin: 0 auto;
+
+            border: 2px solid rgb(200, 99, 71);
+            border-top: 0;
+            text-align: center;
+            background-color: tomato;
+            
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        #close_card_button{
+            position: absolute;
+            top: .5rem;
+            right: 1rem;
+            width: 3vh;
+            height: 3vh;
+
+            text-align: center;
+        }
+        #close_card_button:hover{
+            background-color: thistle;
+        }
+
+    #tasks_group{
+        padding: 1rem 0;
+        width: 100%;
+    }
+        #normal_tasks_group i{
+            margin-top: 3rem;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(39, 39, 39);
+            display: block;
+        }
+        #fast_tasks_group{
+            background-color: whitesmoke;
+        }
+        .todo{
+            background-color: rgb(33, 0, 0);
+            color: whitesmoke !important;
+        }
+        #fast_tasks_group .day_group{
+            display: none;
+        }
+        #fast_tasks_group > div:nth-child(1){
+            display: block;
+            margin-top: 0;
+        }
+        #fast_tasks_group hr{
+            margin-top: 1rem;
+        }
+
+
+    .day_until_0{ background-color: rgb(150, 0, 100); }
+    .day_until_1{ background-color: rgb(245, 54, 54); }
+    .day_until_2{ background-color: rgb(250, 250, 30); }
+    .day_until_3{ background-color: rgb(10, 250, 10); }
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+    #tasks{
+        width: 100%;
+        min-height: 40vh;
+    }
+}

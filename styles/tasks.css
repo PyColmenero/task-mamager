@@ -1,0 +1,129 @@
+.task{
+    height: 3.4rem;
+    display: flex;
+    width: calc(100%-10px);
+
+    background: hsl(0, 0%, 99%);
+    /*box-shadow:  5px 5px 8px #dadada, 
+     -5px -5px 8px #ffffff;*/
+
+    margin: 0 1rem 0 1rem;
+    
+}
+.last_task{
+    margin: 0 1rem 0 1rem;
+}
+.done_task{
+    background-color: hsl(0, 0%, 100%);
+}
+.ytask{
+    background-color: rgb(143, 216, 255) !important;
+}
+.day_group{
+    padding: 0 .5rem;
+    margin: 2rem 1rem 0 1rem;
+
+    font-size: .9rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(43, 0, 0);
+
+    box-sizing: border-box;
+}
+.task p{margin: 0;}
+    .days_until{
+        width: 14%;
+        
+        display: flex;
+        align-items: center;
+
+        border-right: 1px solid rgb(201, 171, 171);
+        
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+    }
+    .days_until:hover{
+        box-shadow: #c9c9c9 2px 0px 0px;
+    }
+        .days_until p{
+            text-align: center;
+            width: 100%;
+        }
+
+    .task_right{
+        width: 86%;
+        display: flex;
+        position: relative;
+    }
+        .porcentaje_task{
+            display: flex;
+            width: 100%;
+            z-index: 1;
+        }
+        .porc{
+            background-color: rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .task_data{
+            position: absolute;
+            width: 100%;
+            display: flex;
+        }
+        .task_data > div:nth-child(1){
+            width: 70%;
+            border-right: 1px solid rgb(174, 174, 174);
+            padding: 0 .5rem;
+            margin: .5rem 0;
+            z-index: 1;
+            color: rgb(55, 55, 55);
+        }
+        .task_data > div:nth-child(2){
+            width: 15%;
+            padding: 0 .5rem;
+            margin: .5rem 0;
+
+            color: rgb(55, 55, 55);
+        }
+            .task_name{
+                font-size: 1rem;
+                font-family: 'Poppins', sans-serif;
+            }
+            .task_desc{
+                font-size: .8rem;
+            }
+
+        .task_data > div:nth-child(1) p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 90%;
+            z-index: 1;
+        }
+
+        .task_text[expanded=true] .task_desc{
+            text-overflow: clip !important;
+            white-space: break-spaces;
+            overflow: visible;
+            width: 100%;
+        }
+
+#floating_task{
+    width: 10%;
+    position: absolute;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+    .day_group{
+        padding: 0 .5rem;
+        margin: 1rem .5rem 0 .5rem;
+    }
+    .task{
+        height: 3rem;
+
+        margin: 0 .5rem 0 .5rem;
+        
+    }
+
+
+}

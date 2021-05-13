@@ -1,0 +1,77 @@
+
+#open_JSON{
+    padding: .5rem;
+
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    
+    background-color: rgb(215, 251, 252);
+    border: 2px solid rgb(77, 0, 0);
+    border-radius: 3px;
+    box-shadow: 4px 4px 6px rgb(215, 221, 255);
+    font-size: 1rem;
+    
+    cursor: pointer;
+
+    z-index: 2;
+}
+    #open_JSON > p{
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+#card_JSON{
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    height: 100vh;
+    width: 100vw;
+    
+}
+    #card_JSON > div{
+        position: relative;
+        margin: 0 auto;
+        width: 40%;
+        padding: 1rem 3rem;
+
+        border: 2px solid rgb(239, 236, 236);
+        background-color: whitesmoke;
+
+    }
+        #close_JSON{
+            width: 5%;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        #close_JSON:hover{ background-color: rgb(222, 222, 222); }
+        #card_JSON p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+        }
+        #card_JSON textarea{
+            width: 100%;
+            margin-bottom: 2rem;
+            border: 1px solid white;
+        }
+        #card_JSON button{
+            width: 100%;
+            margin: 5px  0;
+            padding: .5rem 0;
+            border-radius: 0;
+            border: 2px solid white;
+        }
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+    #open_JSON{
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+}

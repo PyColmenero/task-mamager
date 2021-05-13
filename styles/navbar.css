@@ -1,0 +1,156 @@
+nav{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    background-color: hsl(0, 0%, 5%);
+}
+nav *{
+    font-family: 'Poppins', sans-serif;
+}
+    #tasks_filter{
+        width: 100%;
+        display: flex;        
+    }
+        #create_tasks{
+            width: 15%;
+            height: 8vh;
+            color: whitesmoke;
+            display: flex;
+            align-items: center;
+            background-color: black;
+            
+        }
+            #open_task:hover{ 
+                background-color: hsl(0, 0%, 10%);
+                cursor: pointer;
+            }
+            #open_filters{
+                display: none;
+            }
+            #fast_task:hover > p{
+                text-decoration: underline wheat;
+                cursor: pointer;
+            }
+            #create_tasks > div{
+                width: 100%;
+                text-align: center;
+                margin: 0;
+            }
+            #open_fast_task{
+                
+            }
+                #hidden_input_div{
+                    height: 8vh;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+                    #hidden_input{
+                        background-color: rgba(0, 0, 0, 0);
+                        color: wheat;
+                        border: 0;
+                        border-bottom: 1px solid rgb(255, 0, 140);
+                    }
+                    #close_hidden_input{
+                        background-color: hsl(0, 0%, 10%);
+                        width: calc(100%/10);
+                    }
+                    #close_hidden_input:hover{
+                        background-color: hsl(0, 0%, 15%);
+                    }
+        #nav_inputs_filter{
+            width: 85%;
+            display: flex;
+        }
+            #nav_fields_filter{
+                width: 75%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+                #nav_fields_filter > input, #nav_fields_filter > select{
+                    width: 30%;
+                    height: 4vh;
+
+                    border-radius: 0;
+                    border: 0;
+                    border-bottom: 1px solid rgb(255, 0, 140);
+                    
+                    background-color: hsl(0, 0%, 5%);
+                    color: wheat;
+                }
+            #nav_check_filter{
+                width: 25%;
+                color: whitesmoke;
+                font-size: .8rem;
+            }
+                #nav_check_filter label{
+                    display: block;
+                }
+            #switch{
+                display: none;
+            }
+
+            
+@media screen and (max-aspect-ratio: 1/1) {
+    nav{
+        height: auto;
+    }
+        #tasks_filter{
+            width: 100%;
+            display: block;        
+        }
+            #create_tasks{
+                width: 100%;
+                height: auto;
+            }
+                #open_task{
+                    width: 85% !important;
+                    height: auto;
+                }
+                #open_filters{
+                    display: block;
+                    width: 15% !important;
+                    padding: .5rem;
+                }
+                #open_filters:hover{
+                    background-color: rgb(36, 36, 36);
+                }
+            #nav_inputs_filter{
+                width: 100%;
+                display: block;
+                overflow: hidden;
+
+                transition: max-height 500ms linear;
+            }
+            .navbar__closed{
+                max-height: 0px !important;
+            }
+            .navbar__opened{
+                max-height: auto !important;
+            }
+                #nav_fields_filter{
+                    display: block;
+                    width: 100%;
+                }
+                    #nav_fields_filter input, #nav_fields_filter select{
+                        display: block;
+                        width: 95%;
+                        margin: 1rem auto;
+                    }
+                #nav_check_filter{
+                    width: 95%;
+                    margin: 5px auto;
+                }
+
+                #switch{
+                    background-color: rgb(41, 41, 41);
+                    color: whitesmoke;
+                    display: flex;
+                }
+                    #switch > div{
+                        width: 50%;
+                        padding: .5rem;
+                        text-align: center;
+                    }
+}

@@ -1,0 +1,65 @@
+html, body{
+    margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.nselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.word_filter{
+    font-weight: 900;
+    text-decoration: unset;
+}
+
+#php_errors{
+    width: 100vw;
+}
+
+#tasks-calendar{
+    display: flex;
+    height: 92vh;
+    /*border: 2px solid rgb(151, 205, 255);*/
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgb(197, 197, 197);
+}
+
+.birthday{
+    background-color: bisque;
+}
+
+.not-scroll{
+    overflow: hidden !important;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    #tasks-calendar{
+        display: block;
+        /*border: 2px solid rgb(151, 205, 255);*/
+    }
+}

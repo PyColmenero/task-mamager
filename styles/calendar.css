@@ -1,0 +1,103 @@
+
+#calendar{
+    width: 70%;
+
+    transition: width .5s;
+}   
+    #change_calendar{
+        display: flex;
+        width: 100%;
+        height: 8vh;
+        align-items: center;
+        text-align: center;
+
+        box-sizing: border-box;
+
+        border-bottom: 1px solid rgb(123, 123, 123);
+        font-family: 'Poppins', sans-serif;
+    }
+        #change_calendar > div{
+            width: 100%;
+        }
+        #cc_right, #cc_left{
+            background-color: whitesmoke;
+        }
+        #cc_right:hover, #cc_left:hover{
+            background-color: rgb(221, 221, 221);
+        }
+    
+    #days_group{
+        height: 84vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-left: 1px solid rgb(123, 123, 123);
+    }   
+        
+        .day, .day-block{
+            width: calc(100%/7);
+            height: 14vh;
+            padding-bottom: 1rem;
+
+            border-right: 1px solid rgb(123, 123, 123);
+            border-bottom: 1px solid rgb(123, 123, 123);
+
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        .day:hover{
+            background-color: whitesmoke;
+        }
+        .selected_day{
+            background: rgb(84, 0, 0);
+            color: whitesmoke;
+        }
+            .day_number{
+                margin: 0 0 0.3rem 0;
+                padding: .2rem .4rem;
+                cursor: pointer;
+                /*border-bottom: 1px solid #555555;*/
+            }
+            #day_today{
+                background-color: rgb(178, 197, 250);
+            }
+            .ytask{
+                background-color: rgb(143, 216, 255);
+            }
+                .day_task{
+                    
+                    width: 95%;
+                    margin: 0 auto .3rem auto;
+                    border: 1px solid rgb(201, 201, 201);
+                    background-color: whitesmoke;
+                    
+                    box-sizing: border-box;
+
+                    position: relative;
+                    cursor: pointer;
+                }
+                    .day_task > div:nth-child(2){
+                        padding: 2px;                        
+                    }
+                        .day_task_name{
+                            margin: 0;
+                            font-size: .8rem;
+                            font-family: 'Poppins', sans-serif;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+
+                    .progress_day_task{
+                        position: absolute;
+                        height: 100%;
+                        top: 0;
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+    #calendar{
+        width: 100%;
+    }
+}

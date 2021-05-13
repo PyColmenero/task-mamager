@@ -1,0 +1,33 @@
+.fast_task{
+    width: calc(100%-10px);
+    margin: 1rem;
+    padding: .5rem 0;
+
+
+    background: hsl(0, 0%, 99%);
+    box-shadow:  5px 5px 8px #dadada, 
+     -5px -5px 8px #ffffff;
+
+    
+
+    display: flex;
+}
+    .fast_task > div:nth-child(1){
+        width: 20%;
+        padding: 0 1rem;
+    }   
+    .fast_task > div:nth-child(2){
+        width: 60%;
+        text-align: center;
+    }
+    .fast_task > div:nth-child(3){
+        width: 20%;
+        text-align: right;
+        padding: 0 1rem;
+    }
+        .fast_task_done{
+            width: 20%;
+        }
+        .done_fast_task{
+            background-color: black;
+        }

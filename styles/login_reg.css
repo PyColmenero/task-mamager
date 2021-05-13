@@ -1,0 +1,96 @@
+#login{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(245, 245, 245, 0.9);
+    color: whitesmoke;
+    
+    position: fixed;
+    display: flex;
+    align-items: center;
+
+    z-index: 5;
+
+    font-family: 'Poppins', sans-serif;
+}
+    #login > div{
+        width: 30%;
+        background-color: rgb(39, 39, 39);
+        box-shadow: 9px 9px 3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0 auto;
+    }
+        .lr__form div{
+            width: 90%;
+            margin: 0 auto;
+        }
+            .lr__form > div > img{
+                width: 20%;
+                margin: 0 auto;
+                
+                fill: whitesmoke !important;
+
+                display: block;
+            }
+            .lr__form input[placeholder]{
+                width: 100%;
+                margin-top: 1rem;
+                padding: .5rem;
+                box-sizing: border-box;
+            }
+            .lr__form label{
+                width: 100%;
+                display: block;
+                text-align: left !important;
+                font-size: .8rem;
+                margin-top: .4rem;
+            }
+            .lr__form a{
+                color: rgb(179, 227, 245) !important;
+            }
+            #login__fg{
+                font-size: .7rem;
+                margin-right: .5rem;
+                text-align: right;
+                margin-bottom: 17.5%;
+            }
+            #login__error, .register__error{
+                color: rgb(255, 137, 137);
+                text-align: left;
+                font-size: .7rem;
+            }
+            .wanna{
+                margin-top: 1.8rem;
+                text-decoration: underline whitesmoke;
+                font-size: .8rem;
+                cursor: pointer;
+            }
+        .lr__form button{
+            width: 100%;
+            
+            padding: .8rem;
+            border: 0;
+            border-radius: 0;
+            background-color: rgb(175, 141, 255);
+            color: whitesmoke;
+            cursor: pointer;
+        }
+        .login__close{
+            width: 12%;
+            margin-left: 88%;
+            padding: .5rem;
+            box-sizing: border-box;
+        }
+        .login__close:hover{
+            background-color: rgb(58, 58, 58);
+        }
+
+@media screen and (max-aspect-ratio: 1/1) {
+    #login > div{
+        width: 80%;
+        background-color: rgb(39, 39, 39);
+        box-shadow: 9px 9px 3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0 auto;
+    }
+}
